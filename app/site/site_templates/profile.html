@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<!--     <section class="bg-dark text-light text-center shadow mb-20">
+        <div class="container p-5 bg-dark">
+            <div class="row">
+                <div class="d-md-flex bg-dark align-items-center justify-content-evenly">
+                    <h1 class="col text-center">{{ current_user.email}}'s user profile</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center">
+    <div class="container p-10">
+        <div class="row"><br>
+            <h3 class="p-5">Here are your profile details</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Email: {{ current_user.email }}</li>
+                <li class="list-group-item">Token: {{ current_user.token }} </li> 
+            </ul>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-4"></div>
+            <div class="col-3 p-10">
+                <img src="../../static/images/undraw_delivery_address_03n0.svg" class="d-flex align-items-center justify-content-center p-50 img-fluid" alt="">
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    </section>
+ -->
+    <section class="bg-light text-center">
+        <div 
+            class="bg-image" 
+            style="
+                background-image: url(../../static/images/alex-suprun-AHnhdjyTNGM-unsplash.jpg);
+                height: 95vh;
+            "
+        >   
+            <div class="m-0">
+                <h1 class="bg-dark text-center text-white p-4">{{ current_user.email}}'s user profile</h1>
+            </div>
+            <div class="container bg-dark border border-white align-items-center justify-content-center" style="margin-top: 100px">
+                <h3 class="p-3 text-white bg-dark">Here are your profile details</h3>
+                <ul class="list-group p-3">
+                    <li class="list-group-item">Email: {{ current_user.email }}</li>
+                    <li class="list-group-item">Token: {{ current_user.token }} </li> 
+                </ul>
+            </div>
+            <!-- <div class="border border-white">
+                <div class="d-md-flex bg-dark align-items-center justify-content-evenly p-4 pb-0">
+                    <h1 class="text-white text-center" style="margin: 10px; font-size: 4rem">Welcome to Car Collection</h1>
+                </div>
+                <div class="d-md-flex bg-dark align-items-center justify-content-evenly p-4 pt-0">
+                    <h3 class="text-white text-center" style="margin: 10px">Join now and start storing your car inventory today!!</h3>
+                </div>
+                <div class="d-md-flex bg-dark align-items-center justify-content-center p-4 pt-0">
+                    <a class="btn btn-outline-light btn-lg m-4 mt-0 mb-0" href="" role="button">Log In</a>
+                    <a class="btn btn-outline-light btn-lg m-4 mt-0 mb-0" href="" role="button">Sign Up</a>
+                </div>
+            </div>   -->
+        </div>
+    </section>
+{% endblock %}
